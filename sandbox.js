@@ -146,5 +146,36 @@ let htmlTag = `
 console.log('HtmlTag value is :'+htmlTag);
 
 
+/*
+***********Arrays**************
+*/
+let students =['Anil','Venkat','Karuna']; // Array
+console.log('Students are : '+students);
+console.log('student at index 1 is :' +students[1] );
+students[1]='Kumar';
+console.log('student at index 1 after reassigning is :' +students[1] );
+console.log('Students are : '+students);// Arrays are mutable
+
+let randomArray = ['string1',22];
+console.log("Random at position 1 is :"+randomArray[1]);
+
+console.log('Length of students is : '+students.length);
+
+//Array Methods
+let joinedArray =  students.join("-");
+console.log('Array join method value is :'+joinedArray);
+
+console.log('Index of Venkat in [ ' + students + ' ] array is : '+students.indexOf("Venkat"));// -1 because Venkat is not found
+console.log('Index of Venkat in students array is : '+students.indexOf("Kumar"));
+
+let concatArray = students.concat(randomArray);
+console.log("concatArray using concat is : "+concatArray);
+
+let studentPush = students.push("Venkat");
+console.log("students after push operation is : "+students);
+
+let studentsPop = students.pop("Venkat");
+// console.log(studentsPop); // displays removed item
+console.log("students after pop operation is : "+students);
 
  
