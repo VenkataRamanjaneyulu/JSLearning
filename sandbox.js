@@ -1,6 +1,7 @@
 //alert('Hello World!'); 
 console.log('Hello World!');
 
+// variables
 let age= 27; //age is a variable which can be changed.
 let year = 1993;
 console.log('age is : '+age ,'and born year is : ' +year);
@@ -20,4 +21,19 @@ console.log('Name is : '+name);
 reserved keywords are not allowed  for identifiers */
 
 
+/*
+Data Types:
+=========
+Number : 1, 100.4 
+String : "hello"
+Boolean : true/false
+Null   : Explicitly set a variable with no value
+Undefined : Variables not yet defined.
+Object : Complex data structures - Arrays , Dates etc., Everything in JS is an object
+Symbol : Used with Objects , new addition with JS.
+*/
 
+/* 
+=>JS is case -sensitive lang 
+=>JS is loosely typed language
+*/
