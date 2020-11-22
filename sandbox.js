@@ -9,7 +9,7 @@ console.log('age is : '+age ,'and born year is : ' +year);
 age= 30;// reassigning the value
 console.log('new age is : '+age);
 
-const pi =2.34; // pi is a constant which can't be changed.
+const pi =3.14; // pi is a constant which can't be changed.
 console.log('Pi value is : '+pi);
 //pi=20; //creates type error if we assign a new value to constant , uncomment and try once.
 //console.log('Pi new value is '+pi); 
@@ -98,6 +98,34 @@ console.log("Email after replacing @ with $ is "+ email.replace('@','$'));
 
 let testEmail = 'kattamuruanil';
 //console.log(email.replace('a','e')); // only replaces the first character it founds but not all.
+
+
+/* 
+***********Numbers***********
+*/
+
+let radius = 10;
+//math operators +, - ,* , / ,% , **
+console.log("Area of circle is "+(pi)*(radius**2));
+//order of precendence is important i.e BODMAS while doing calculations.
+//++ has pre increment and post increment operator
+//-- pre decrement and post decrement
+let likes = 1;
+likes+=1;
+console.log("Likes values is "+likes);
+let newLikes =1;
+console.log("newLikes values is "+newLikes++); 
+
+//NaN => Not a Number
+ console.log("NaN example is 5*'hello' => "+ 5*"hello");
+
+ //Concatenate Numbers
+ let x= 10;
+ let y=20;
+ let StringNum="10";
+ console.log('Concatenate value of two numbers is '+(x+y));
+ console.log('Concatenate value of number and string is '+(x+StringNum));
+
 
 
 
