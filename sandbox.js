@@ -210,6 +210,45 @@ console.log("Comp of 25 === '25' is : "+ (comp1===comp2)); // false because no t
 
 //Lowercase lteers are greater than capital letters
 
+/* 
+************** Type Conversion *********
+Converting one data type to other.
+*/
+let score = '100';
+console.log('Type of score is : '+typeof score);
+console.log('score is : '+ (score+1)); // no default type conversion so it prints 1001
+console.log('score is : '+ (score*1)); // auto type conversion to number
+
+score = Number(score);
+console.log('score is : '+ (score+1)); // 101
+
+let scoreMan = Number('hello');
+console.log('scoreMan is : '+ scoreMan); // NaN 
+
+let scoreString = String(50);
+console.log(scoreString , typeof scoreString);
+
+let newVar= Boolean(0);
+console.log('newVar value is :'+ newVar); // false
+let newVar2= Boolean("0");
+console.log('newVar2 value is :'+ newVar2);// true
+let newVar3= Boolean(null);
+console.log('newVar3 value is :'+ newVar3); // false
+let newVar4 = (Boolean)('');
+console.log('newVar4 value is :'+ newVar4); // false
+let newVar5 = (Boolean)(undefined);
+console.log('newVar4 value is :'+ newVar5); // false
+let newVar6 = (Boolean)(NaN);
+console.log('newVar4 value is :'+ newVar6); // false
+let newVar7 = (Boolean)(Infinity);
+console.log('newVar4 value is :'+ newVar7); // true
+
+
+
+
+
+
+
 
 
 
