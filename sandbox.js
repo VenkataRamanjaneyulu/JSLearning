@@ -127,6 +127,23 @@ console.log("newLikes values is "+newLikes++);
  console.log('Concatenate value of number and string is '+(x+StringNum));
 
 
+ /* 
+ *******String Templates i.e TemplateLiteral*******
+ */
+let title="My New Book";
+let author="Venkat";
+let concatStringExp= 'The blog called '+title+' by '+author+' has '+likes +' likes';
+console.log('Concatenated string is : '+concatStringExp);
+
+//using template string not uses quotes .
+let templateString = `The blog called ${title} by ${author} has ${likes} likes.`;
+console.log('templateString value is : '+templateString);
+
+let htmlTag = `
+    <h2>${title}</h2>
+    <p>By ${author} Has ${likes} likes </p>
+`;
+console.log('HtmlTag value is :'+htmlTag);
 
 
 
