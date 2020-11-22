@@ -189,5 +189,33 @@ console.log("students after pop operation is : "+students);
  ageNew = null;
  console.log("Age is "+ageNew +' '+ (ageNew+3) + ` My age is ${ageNew}`);// null 3 null
 
+/*
+*********  Booleans true/false **********
+*/
+console.log(true,false,"false","true");
+let newEmail = "vkattamuru@salesforce.com";
+let present = newEmail.includes('@');
+console.log('present : '+present);
+
+/*
+****************Loose Comparison vs Strict Comparison****************
+*/
+let comp1 = 25;
+let comp2 = "25";
+console.log("Comp of 25 == 25 is : "+ (comp1==25));//true
+console.log("Comp of 25 == '25' is : "+ (comp1==comp2));//true
+
+console.log("Comp of 25 === 25 is : "+ (comp1===25));//true
+console.log("Comp of 25 === '25' is : "+ (comp1===comp2)); // false because no type converion will happen.
+
+//Lowercase lteers are greater than capital letters
+
+
+
+
+
+
+
+
 
 
