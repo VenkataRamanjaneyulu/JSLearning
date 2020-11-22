@@ -37,3 +37,38 @@ Symbol : Used with Objects , new addition with JS.
 =>JS is case -sensitive lang 
 =>JS is loosely typed language
 */
+
+
+/* 
+Strings
+===============
+We must enclose Strings with single quote (or) with double quote.
+*/
+let email = "kattamuruanil@gmail.com";
+console.log("My Email is : "+ email);
+
+//String concatenation
+let firstName= "Anil";
+let lastName = "Kattamuru";
+
+let fullName= firstName+' '+lastName;
+console.log("My FullName is : "+fullName);
+
+//getting characters from string
+//get first character of fullName
+//JS is indexed with 0 as starting index.
+let firstChar= fullName[0];
+console.log("First Character at FullName is :"+ firstChar);
+
+//String length is a property of String object.
+console.log("Length of Fullname including spaces is : "+fullName.length);
+
+//String Methods
+console.log("FullName in UppserCase is : "+ fullName.toUpperCase());
+let nameLowerCase = fullName.toLowerCase();
+console.log("FullName in LowerCase is : "+ nameLowerCase);
+
+let indexOfAt = email.indexOf('@');
+console.log("Position of @ symbol in  "+email+" "+ "is : "+indexOfAt);
+
+
