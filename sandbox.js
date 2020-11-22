@@ -40,9 +40,8 @@ Symbol : Used with Objects , new addition with JS.
 
 
 /* 
-Strings
-===============
-We must enclose Strings with single quote (or) with double quote.
+*************Strings*************
+=>We must enclose Strings with single quote (or) with double quote.
 */
 let email = "kattamuruanil@gmail.com";
 console.log("My Email is : "+ email);
@@ -72,3 +71,35 @@ let indexOfAt = email.indexOf('@');
 console.log("Position of @ symbol in  "+email+" "+ "is : "+indexOfAt);
 
 
+/*
+*************Common String Methods *************
+*/
+let findChar = "a";
+let lastCharIndexIs = email.lastIndexOf('a');
+let emailLength = email.length;
+console.log("Last Index of letter "+findChar+" in "+email+" is : "+lastCharIndexIs);
+
+let lastCharInEmail = email[emailLength-1];
+console.log("Last character in "+ email + " is : "+lastCharInEmail);
+
+//Slice
+console.log("Email after slice is :" +email.slice(3,13) );
+
+//SubString
+console.log("Email after substring is :" +email.substring(3,13) );
+//Both substring and sliec wil have first argument is same i.e start position
+//but for subString 2nd argument is length of indexes but for slice it is index element.
+
+// email will not alter as Strings are immutable so it will create a new copy
+console.log('Email remains unchanged even after slice/ substring : '+email);
+
+//replace method
+console.log("Email after replacing @ with $ is "+ email.replace('@','$'));
+
+let testEmail = 'kattamuruanil';
+//console.log(email.replace('a','e')); // only replaces the first character it founds but not all.
+
+
+
+
+ 
