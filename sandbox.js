@@ -178,4 +178,16 @@ let studentsPop = students.pop("Venkat");
 // console.log(studentsPop); // displays removed item
 console.log("students after pop operation is : "+students);
 
- 
+
+/*
+*********** Null and Undefined **********
+*/
+
+ let ageNew ;
+ console.log("Age is "+ageNew + (ageNew+3) + `My age is ${ageNew}`);//  undefined NaN undefined
+
+ ageNew = null;
+ console.log("Age is "+ageNew +' '+ (ageNew+3) + ` My age is ${ageNew}`);// null 3 null
+
+
+
