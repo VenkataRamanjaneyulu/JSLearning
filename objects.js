@@ -10,7 +10,22 @@
     age: 27 ,
     email: 'kattamuruanil@gmail.com ',
     location:'Hyderabad',
-    blogs : ['my first js blog', 'chess rules']
+    blogs : ['my first js blog', 'chess rules'],
+    login: function(){
+        console.log('User Logged In');
+    },
+    logout : function(){
+        console.log('User Logged Out');
+    },
+    logBlogs : function(){
+        this.blogs.forEach((blog)=>{
+            console.log('Blog name is : '+blog);
+        })
+    },
+    printEmail(){
+       console.log('Email printed :'+ this.email); 
+    }
+
   };
   console.log('age is : ',user.age);
   user.age = 25;
@@ -22,3 +37,9 @@
 const key= 'location';
 console.log(user[key], ' location');
 console.log('Typeof user is :'+ typeof user);
+
+user.login();// login is a method here
+user.logout();
+user.logBlogs(); // this keyword for accessing current object else window object
+// but for arrow function , the value is not changed based on caller but it will show window object.
+user.printEmail(); // for normal functions  this keyword will work.
