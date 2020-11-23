@@ -100,3 +100,12 @@ console.log(bill2([10,30,40],0.1) , 'final price');
 
 */
 
+/*
+*********** Functions vs Methods ********
+*/
+// =>Functions are called independently but 
+//   methods are also functions but they are called from an object/dataType using dot notation.
+
+const name = 'Anil';
+let result2 = name.toUpperCase(); // toUpperCase() is method here
+console.log(result2);
