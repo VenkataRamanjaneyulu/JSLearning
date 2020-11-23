@@ -283,6 +283,25 @@ do{
 
 
 
+//if loop
+const ageN= 70;
+if(ageN > 18){
+    console.log('Major person');
+}else{
+    console.log('Minor person');
+}
+
+if(ageN > 18 && ageN< 30){
+    console.log('Young person');
+}else if(ageN > 40 && ageN < 60){
+    console.log('Adult');
+}else if(ageN > 60){
+    console.log('Older person');
+}else{
+    console.log('Minor person');
+}
+
+
 
 
 
