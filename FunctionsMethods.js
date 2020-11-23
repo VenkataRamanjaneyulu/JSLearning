@@ -121,8 +121,39 @@ const func = (callbackFunc)=>{
  callbackFunc(val);
 };
 
+//using normal function
+func(function(val){
+// do something
+console.log('callback val is : '+val);
+});
+
+// using arrow function.
 func( (val) => {
  // do something
  console.log('callback val is : '+val);
 });
 
+
+/* 
+************ ForEach Loop ************
+*/
+
+let people = ['venkat','anil','andrew','karuna','satyavati'];
+
+//using function
+people.forEach(function(person){
+    console.log('person from function is : '+ person);
+});
+
+// using arrow function
+people.forEach( (person,index)=>{
+    console.log('person from arrow function is : '+ person +' at index :'+ index);
+});
+
+
+// another style of using callback function.
+const logPerson = (person,index) =>{
+ console.log(`${index} - hello ${person}`);
+};
+
+people.forEach(logPerson);
