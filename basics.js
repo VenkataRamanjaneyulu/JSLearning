@@ -369,9 +369,21 @@ switch(grade){
     
 }
 
+/*
+*********Variables and Block Scopes **********
+*/
+let temp1 = 10; //has global scope
+if(true){
+    let temp1 = 20; //local scope with same name as global scope variable
+    console.log('Temp1 val with local scope is : '+temp1); // 20
+    if(true){
+        console.log('Temp1 val with nested local scope is : '+temp1);  //20 but not 10 because it uses most recent value of variable.
+        var insideBlock = 100;
+    }
+}
+console.log('Temp1 val with global scope is : '+temp1); //10
+console.log('Accessing local variable outside the scope which is disadvantage with var',insideBlock);
 
-
-
-
+// same rule applies for const variables.
 
 
