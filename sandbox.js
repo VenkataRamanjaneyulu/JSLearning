@@ -274,10 +274,10 @@ console.log('log inside while loop will not execute');
 
 //do while 
 //run the loop atleast once
-i=3;
+i=2;
 do{
     let html2 = `<div>${names[i]}</div>`;
-    console.log('html2 value in do while loop with i=3 is : '+ html2);
+    console.log('html2 value in do while loop with i=2 is : '+ html2);
     i++;
 }while(i<names.length);
 
