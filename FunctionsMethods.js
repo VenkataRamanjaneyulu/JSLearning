@@ -109,3 +109,20 @@ console.log(bill2([10,30,40],0.1) , 'final price');
 const name = 'Anil';
 let result2 = name.toUpperCase(); // toUpperCase() is method here
 console.log(result2);
+
+
+/*
+********** Callback function ***********
+*/
+//when function is passed as argument then that function is called callback function.
+
+const func = (callbackFunc)=>{
+ let val =50;
+ callbackFunc(val);
+};
+
+func( (val) => {
+ // do something
+ console.log('callback val is : '+val);
+});
+
