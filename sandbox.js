@@ -259,12 +259,27 @@ do{}while();
 //no need of semicolon at the end of loop
 const names=['Anil','Venkat','Andrew'];
 for(let i=0 ; i<names.length ; i++){
-    console.log('Name at '+i+ ' is : '+names[i]);
     let html2 = `<div>${names[i]}</div>`;
-    console.log('html2 value is : '+ html2);
+    console.log('html2 value in for loop is : '+ html2);
 }
 
+//while loop
+let i=3;
+while(i<names.length){
+    let html2 = `<div>${names[i]}</div>`;
+    console.log('html2 value in while loop with i=3 is : '+ html2);
+    i++;
+}
+console.log('log inside while loop will not execute');
 
+//do while 
+//run the loop atleast once
+i=3;
+do{
+    let html2 = `<div>${names[i]}</div>`;
+    console.log('html2 value in do while loop with i=3 is : '+ html2);
+    i++;
+}while(i<names.length);
 
 
 
