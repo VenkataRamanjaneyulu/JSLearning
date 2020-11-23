@@ -302,6 +302,30 @@ if(ageN > 18 && ageN< 30){
 }
 
 
+/* 
+************** Logicaloperators *************
+AND => &&
+OR => ||
+NOT => !
+*/
+let password = 'password*1234';
+if( password.length>= 8 && 
+    (   password.includes('@') || password.includes('!') || password.includes('~') || 
+        password.includes('#') || password.includes('$') || password.includes('%') || 
+        password.includes('&') || password.includes('*') || password.includes('^')
+    ) 
+){
+    console.log('Password is mighty strong');
+}else if(password.length>= 8 ){
+    console.log('Password is good');
+}else{
+    console.log('Password is poor');
+}
+
+let user =false;
+if(!user){
+ console.log('You must login to continue');
+}
 
 
 
