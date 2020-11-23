@@ -328,6 +328,47 @@ if(!user){
 }
 
 
+/*
+********** break and continue
+*/
+const studentScores =[0,34,45,100,75,90,99];
+for(let i=0; i<studentScores.length;i++){
+    console.log('You score is : '+studentScores[i]);
+    if(studentScores[i]==0){
+        continue; // ignore next lines of code and go to next iteration
+    }
+    if(studentScores[i]==100){
+        console.log('Congratulations you got maximum score!');
+        break; // breaks out the loop
+    }
+}
+
+/*
+*********** Switch Statements
+=>Use switch statement instead of multiple elseif statements 
+*/
+const grade = 'D';
+switch(grade){
+    case 'A':
+        console.log('You got grade A');
+        break;
+    case 'B':
+        console.log('You got grade B');
+        break;
+    case 'C':
+        console.log('You got grade C');
+        break;
+    case 'D':
+        console.log('You got grade D');
+        break;
+    case 'E':
+        console.log('You got grade E');
+        break;
+    default:
+        console.log('Not a Valid grade');
+    
+}
+
 
 
 
