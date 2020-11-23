@@ -43,3 +43,18 @@ user.logout();
 user.logBlogs(); // this keyword for accessing current object else window object
 // but for arrow function , the value is not changed based on caller but it will show window object.
 user.printEmail(); // for normal functions  this keyword will work.
+
+
+
+/*
+******** Objects in Arrays *********
+*/
+const blogs = [
+    { title : 'SFDC Book', likes: 50},
+    { title : 'LWC Book', likes: 100},
+];
+console.log('blogs ', blogs);
+blogs.forEach((blog)=>{
+  console.log('title : '+ blog.title + ' '+ ' Likes : '+ blog.likes);
+});
+
