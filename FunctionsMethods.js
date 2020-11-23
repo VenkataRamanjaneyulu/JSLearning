@@ -138,7 +138,7 @@ func( (val) => {
 ************ ForEach Loop ************
 */
 
-let people = ['venkat','anil','andrew','karuna','satyavati'];
+const people = ['venkat','anil','andrew','karuna','satyavati'];
 
 //using function
 people.forEach(function(person){
@@ -157,3 +157,17 @@ const logPerson = (person,index) =>{
 };
 
 people.forEach(logPerson);
+
+
+/*
+************* Callback functions in action ********
+*/
+let html= ``;
+people.forEach((person,index)=>{
+    html+=`<li style="color:purple">${person}</li>`;
+});
+console.log('html',html);
+
+let getUl = document.querySelector('.namesToShow');
+console.log(getUl);
+getUl.innerHTML = html;
