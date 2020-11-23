@@ -237,14 +237,32 @@ console.log('newVar3 value is :'+ newVar3); // false
 let newVar4 = (Boolean)('');
 console.log('newVar4 value is :'+ newVar4); // false
 let newVar5 = (Boolean)(undefined);
-console.log('newVar4 value is :'+ newVar5); // false
+console.log('newVar5 value is :'+ newVar5); // false
 let newVar6 = (Boolean)(NaN);
-console.log('newVar4 value is :'+ newVar6); // false
+console.log('newVar6 value is :'+ newVar6); // false
 let newVar7 = (Boolean)(Infinity);
-console.log('newVar4 value is :'+ newVar7); // true
+console.log('newVar7 value is :'+ newVar7); // true
 
 
+/* 
+********** Control Flow Statements *********
+If 
+else 
+else if
+for()
+while()
+do{}while();
 
+*/
+
+//for loop 
+//no need of semicolon at the end of loop
+const names=['Anil','Venkat','Andrew'];
+for(let i=0 ; i<names.length ; i++){
+    console.log('Name at '+i+ ' is : '+names[i]);
+    let html2 = `<div>${names[i]}</div>`;
+    console.log('html2 value is : '+ html2);
+}
 
 
 
