@@ -28,3 +28,17 @@ function  caller(){
     console.log('Inside function hoisting');
 }
 
+
+
+/*
+*********** Arguments and Parameters ************
+*/
+const tryFunction = function(name='defaultName',day='Morning'){
+    //name is called pararmeter and it is a local variable
+    console.log(`Good ${day} ${name}`);
+}
+tryFunction(); // prints default name
+tryFunction('Anil'); // anil is called argument
+// order of arguments is importanat.
+tryFunction('Anil','Night');
+
