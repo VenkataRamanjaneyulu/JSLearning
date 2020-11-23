@@ -36,9 +36,25 @@ function  caller(){
 const tryFunction = function(name='defaultName',day='Morning'){
     //name is called pararmeter and it is a local variable
     console.log(`Good ${day} ${name}`);
-}
+};
 tryFunction(); // prints default name
 tryFunction('Anil'); // anil is called argument
 // order of arguments is importanat.
 tryFunction('Anil','Night');
+
+/*
+********** Return statement of function ******
+*/
+const calcArea = function(radius){
+    return (3.14* (radius**2 ) );
+};
+
+let area = calcArea(10);
+console.log('area value is',area);
+
+const doWithArea = function(area){
+    console.log('area passed is', area);
+};
+
+doWithArea(area);
 
