@@ -79,3 +79,27 @@ const random = Math.random();
 console.log(random , 'random between o to 1');
 console.log('Random numer is : ' ,Math.round(random * 100));
 
+/*
+**************** primitive vs Reference Types ********
+primitive types : strings , numbers, booleans, null , undefined , symbols 
+    => stored in stack memory
+    =>Pass by Value
+reference types; all objects, arrays and functions 
+    => stored in heap memory and pointer to the object is stored in stack memory.
+    =>Pass by reference
+
+*/
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+console.log(`scoreOne is ${scoreOne} and scoreTwo is  ${scoreTwo}`);
+scoreOne = 100;
+console.log(`scoreOne is ${scoreOne} and scoreTwo is  ${scoreTwo}`);
+
+
+const userOne = { name: 'anil', age:27};
+const userTwo = userOne;
+console.log(`userOne age is ${userOne.age} and userTwo age  is  ${userTwo.age}`);
+userOne.age = 20;
+console.log(`userOne age is ${userOne.age} and userTwo age  is  ${userTwo.age}`);
+
