@@ -58,3 +58,24 @@ blogs.forEach((blog)=>{
   console.log('title : '+ blog.title + ' '+ ' Likes : '+ blog.likes);
 });
 
+
+/*
+********* Math Object *****
+*/
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+const area = 7.7;
+console.log(Math.round(area));
+const area2 = 7.2;
+console.log(Math.round(area2));
+const area3 = 7.6;
+console.log(Math.floor(area3));
+const area4 = 7.2;
+console.log(Math.ceil(area4));
+
+// Generate random number
+const random = Math.random();
+console.log(random , 'random between o to 1');
+console.log('Random numer is : ' ,Math.round(random * 100));
+
