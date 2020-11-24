@@ -51,3 +51,12 @@ persons.forEach((person) => {
  content.innerHTML += `<p>${person}</p>`;
 });
 
+/*
+********** Getting and Setting attributes of html tags 
+*/
+
+const linkTag = document.querySelector('a');
+//console.log('link tags : '+ linkTag.getAttribute('href'));
+linkTag.setAttribute('href','https://login.salesforce.com');
+linkTag.innerText = 'Salesforce';
+linkTag.setAttribute('style','color:green'); // if attribue doesn't exist then js will create an attribute.
