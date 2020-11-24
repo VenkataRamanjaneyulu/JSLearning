@@ -132,3 +132,11 @@ console.log('h2parent is', h2var.parentElement) ;
 console.log('h2parents parent  is', h2var.parentElement.parentElement) ;
 console.log('next sibling to h2 is : '+ h2var.nextElementSibling);
 console.log('next sibling to h2 is : '+ h2var.previousElementSibling);
+
+
+/* 
+*********** Events **********
+=>Click events
+=>Submit Events
+=>Mouse events
+*/
