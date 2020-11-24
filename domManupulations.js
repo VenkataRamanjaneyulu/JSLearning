@@ -110,3 +110,25 @@ const titleVar = document.querySelector('h1');
 titleVar.classList.toggle('page-title');
 titleVar.classList.toggle('page-title');
 
+
+/*
+********* Node relations ***********
+=>Parent-Child
+=>Siblings
+*/
+
+//parent-child relationship
+const articleVar = document.querySelector('article'); 
+console.log(articleVar);// retunr HTMLCollection and forEach() won't work
+Array.from(articleVar.children).forEach((child) =>{
+    child.classList.add('article-class');
+});
+
+
+//child to parent relationship
+const h2var = document.querySelector('article > h2'); 
+console.log(h2var,'h2var');
+console.log('h2parent is', h2var.parentElement) ;
+console.log('h2parents parent  is', h2var.parentElement.parentElement) ;
+console.log('next sibling to h2 is : '+ h2var.nextElementSibling);
+console.log('next sibling to h2 is : '+ h2var.previousElementSibling);
