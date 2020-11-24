@@ -60,3 +60,19 @@ const linkTag = document.querySelector('a');
 linkTag.setAttribute('href','https://login.salesforce.com');
 linkTag.innerText = 'Salesforce';
 linkTag.setAttribute('style','color:green'); // if attribue doesn't exist then js will create an attribute.
+
+
+/*
+************* Changing CSS ********
+*/
+
+const title = document.querySelector('h1'); 
+//title.setAttribute('style','margin:150px 50px 10px 30px'); // color property was overriden by this.\
+console.log('title styles :' , title.style);
+title.style.margin  = '50px';
+title.style.color = 'crimson';
+/* if you wnat to use font-size css property you can't use like title.style.font-size ='10px'; 
+    because js will think it's subtraction of size variable and font variable
+    To overcome this convert font-size to cameCase like fontSize
+*/
+title.style.fontSize = '100px';
