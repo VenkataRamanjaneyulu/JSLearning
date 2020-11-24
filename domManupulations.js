@@ -76,3 +76,37 @@ title.style.color = 'crimson';
     To overcome this convert font-size to cameCase like fontSize
 */
 title.style.fontSize = '100px';
+
+
+/*
+******** Adding and Removing classes from html 
+*/
+
+const classVar = document.querySelector('#errorId');
+console.log('classList',classVar.classList); 
+classVar.classList.add('jsClass');// returns DOMTokenList with class names
+console.log('classListAfter',classVar.classList); 
+classVar.classList.remove('error');
+console.log('classListAfterRemove',classVar.classList); 
+
+
+//textContent vs innerText => textContent will bring all the content but innerText will bring only visible content
+
+const parasCol= document.querySelectorAll('p');
+parasCol.forEach( p => {
+ if(p.textContent.toLowerCase().includes('success')){
+     p.classList.add('success');
+ }else if (p.textContent.toLowerCase().includes('error')){
+    p.classList.add('error');
+ }else {
+    p.classList.remove('error');
+    p.classList.remove('success');
+ }
+});
+
+
+//toggle method for adding or removing
+const titleVar = document.querySelector('h1');
+titleVar.classList.toggle('page-title');
+titleVar.classList.toggle('page-title');
+
