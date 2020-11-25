@@ -48,3 +48,21 @@ ul.addEventListener('click',(evt)=>{
      evt.target.remove();
  }
 });
+
+
+// copy event
+const copyMe= document.querySelector('.copy-me');
+copyMe.addEventListener('copy', () => {
+  console.log(copyMe);
+});
+
+//mousemove event
+const mouseBox = document.querySelector('.box');
+mouseBox.addEventListener('mousemove' , (e)=>{
+mouseBox.textContent = ` X pos: ${e.offsetX}  Y pos: ${e.offsetY}`;
+});
+
+// wheel event
+document.addEventListener('wheel', (e)=>{
+  console.log(`pagex is : ${e.pageX} and pageY is : ${e.pageY}`);
+});
