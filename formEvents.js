@@ -9,20 +9,22 @@
 const form = document.querySelector('.signup-form');
 const feedbackjs = document.querySelector('.feedback');
 
+    const username = form.username.value;
+    //console.log(username);
+    const usernamePattern = /^[a-zA-Z]{6,8}$/;
+    //console.log(usernamePattern.test(username));
+
 //const name = document.querySelector('#username');
 
 //click event will get called only when you click on button but 
 //with sumbit event even if you press enter button , function will get called
 
-form.addEventListener('submit',(e)=>{
+/*form.addEventListener('submit',(e)=>{
     e.preventDefault();
     //console.log(name.value);
     //console.log(form.username.value);  // another way of getting value using with id/name attributes
     //console.log(form.username.value);
-    const username = form.username.value;
-    console.log(username);
-    const usernamePattern = /^[a-zA-Z]{6,12}$/;
-    console.log(usernamePattern.test(username));
+    
     
     if(usernamePattern.test(username)){
         //good feedback
@@ -33,6 +35,7 @@ form.addEventListener('submit',(e)=>{
     } 
 
 });
+*/
 
 
 /*
@@ -61,4 +64,15 @@ console.log('result is :'+resultRegex);// retyrn -1 if no match
 /*
 ************KeyBoard Events ***********
 */
+form.username.addEventListener('keyup',(e) =>{
+    console.log(e.target.value,form.username.value);
+    console.log(usernamePattern.test(e.target.value));
+    if(usernamePattern.test(e.target.value)){
+        form.username.setAttribute('class','success');
+        //feedbackjs.textContent='That username is valid';
+    }else{
+        //feedback help info
+        form.username.setAttribute('class','error');
+    } 
 
+});
